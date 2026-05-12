@@ -104,7 +104,7 @@ if __name__ == '__main__':
         ).to(device)
         optimizer = torch.optim.Adam(model.parameters(), lr=args.lr)
         
-        checkpoint = torch.load('./saved_weights/StageAwareTransformer')
+        checkpoint = torch.load('./saved_weights/checkpoint')
         save_chunk = checkpoint['chunk']
         print("last saved model is in chunk {}".format(save_chunk))
         model.load_state_dict(checkpoint['net'])
