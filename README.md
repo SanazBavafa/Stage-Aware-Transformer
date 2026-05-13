@@ -34,7 +34,7 @@ You also need the preprocessing utilities used by the original MIMIC-III benchma
 
 - `train.py`: Full training and evaluation script.
 - `model.py`: Defines the `StageAwareTransformer` architecture.
-- `stage_aware_transformer.ipynb`: Notebook version of the pipeline for experimentation.
+- `stage_aware_transformer_pipeline.ipynb`: Notebook version of the pipeline for experimentation.
 - `saved_weights/`: Directory for saved checkpoint and weights.
 
 ## Hyperparameters
