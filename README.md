@@ -63,13 +63,13 @@ The model is trained with:
 
 Validation performance is monitored using AUC-PRC, and the best checkpoint is saved automatically.
 
-## Evaluation
+## Data Preparation
 
-During evaluation:
-- The best checkpoint is loaded from `saved_weights/`.
-- The test set is processed with the same discretizer and normalizer.
-- Masked predictions are used to compute test loss and binary classification metrics.
-- ROC curve and AUROC are reported for the final model.
+The MIMIC-III dataset is not included in this repository. To use this project, please obtain the data from [MIMIC-III PhysioNet](https://physionet.org/content/mimiciii/1.4/) and download the required CSV files.
+
+For the decompensation prediction task, build the benchmark dataset using the instructions provided in [mimic3-benchmarks](https://github.com/YerevaNN/mimic3-benchmarks/).
+
+Once the benchmark is prepared, place the files from the `decompensation` directory into the `data/` directory. Sample files are included in the repository to demonstrate the expected input format and directory structure.
 
 ## Test Stage-Aware Transformer with MIMIC-III without training
 Trained weights are provided in ./saved_weights/SAT and you can obtain the reported performance in our paper by simply load the weights to the model.
