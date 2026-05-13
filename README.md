@@ -36,7 +36,7 @@ You also need the preprocessing utilities used by the original MIMIC-III benchma
 - `model.py`: Defines the `StageAwareTransformer` architecture.
 - `stage_aware_transformer_pipeline.ipynb`: Notebook version of the pipeline for experimentation.
 - `saved_weights/`: Directory for saved checkpoint and weights.
-- `saved_weights/`: Directory for dataset (train, test)
+- `data/`: Directory for dataset (train, test)
 ## Hyperparameters
 
 Default settings used in the pipeline:
