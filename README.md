@@ -90,7 +90,7 @@ The pre-trained weights provided in this repository (./saved_weights/SAT) can be
 
 You need to run train.py in test mode and input the data directory. For example,
 
-$ python train.py --test_mode=1 --file_name SNK
+$ python train.py --test_mode=1 --file_name SAT
 
 ## Training Stage-Aware Transformer
 
